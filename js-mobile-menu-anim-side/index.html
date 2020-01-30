@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript: show-hide a mobile menu, animated</title>
+
+<!-- CSS -->
+<style>
+html {
+  --lightbg: rgba(255, 255, 255, .9);
+  --lightBorder: 2px solid var(--lightbg);
+}
+
+/* MOBILE AND GLOBAL STYLES
+   screens smaller than 600px (see breakpoint)
+   and also above 600px unless overwridden later
+*/
+
+body {
+  background: #ccc;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+}
+
+main { padding: 0 6px; }
+
+h1 { margin-top: .25em; }
+
+nav {
+  position: absolute;
+  display: flex;
+  height: calc(100vh - 2em);
+  width: 100%;
+  transform: translateX(-100%);
+  background: rgba(85, 85, 85, .9);
+  flex-direction: column;
+  transition: all .25s;
+}
+nav a {
+  padding: 1.25em 1.5em;
+  color: #ccc;
+  text-decoration: none;
+  border-bottom: var(--lightBorder);
+}
+nav a:first-child {
+  border-top: var(--lightBorder);
+}
+
+.menu {
+  box-sizing: border-box;
+  background: #555;
+  text-align: left;
+  padding-left: 10px;
+  color: #fff;
+  line-height: 2em;
+}
+.show-menu {
+  transform: translateX(0);
+  transition: all .5s;
+}
+
+
+/* ABOVE MOBILE (599px and wider) */
+
+@media screen and (min-width: 600px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    position: relative;
+    height: auto;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  nav a, nav a:first-child {
+    background: #333;
+    border: 0;
+    transition: all 1.5s;
+  }
+  nav a:hover {
+    color: #dfd;
+    background: #797;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+  <div class="menu" id="menuToggle">☰</div>
+  <nav id="menuNav">
+    <a href="#">link 1</a>
+    <a href="#">link 2</a>
+    <a href="#">link 3</a>
+  </nav>
+  
+  <main>
+    <h1>Main heading</h1>
+    <p>Some page content</p>
+  </main>
+
+<!-- JAVASCRIPT -->
+<script>
+
+const toggleMenu = () => {
+  menuNav.classList.toggle("show-menu");
+}
+
+menuToggle.addEventListener("click", toggleMenu);
+
+</script>
+
+</body>
+</html>
