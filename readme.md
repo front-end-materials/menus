@@ -3,8 +3,8 @@
 ## Menus
 
 - [Simple mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu/)
-- [Animated top-down mobile menu](js-mobile-menu-anim/)
-- [Animated side slide-in mobile menu](js-mobile-menu-anim-side/)
+- [Animated top-down mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu-anim/)
+- [Animated side slide-in mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu-anim-side/)
 
 ## Note:
 
