@@ -3,8 +3,8 @@ const myNav = document.querySelector("nav");
 
 myButton.addEventListener("click", toggleMenu);
 
-const sections = [sectionDefault, sectionTwo, sectionThree, sectionFour];
-const tabs = [triggerNone, triggerTwo, triggerThree, triggerFour];
+const sections = [sectionOne, sectionTwo, sectionThree, sectionFour];
+const tabs = [triggerOne, triggerTwo, triggerThree, triggerFour];
 
 function toggleMenu() {
   // console.log("toggled menu button");
@@ -25,6 +25,6 @@ function showSection(section, tab) {
 }
 
 function hideAllSections() {
-  sections.forEach( sec => sec.classList.remove("show") );
   tabs.forEach( sec => sec.classList.add("inactive") );
+  sections.forEach( sec => sec.classList.remove("show") );
 }

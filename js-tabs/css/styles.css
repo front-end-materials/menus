@@ -39,7 +39,7 @@ body {
   display: none;
 }
 
-#sectionDefault,
+#sectionOne,
 #sectionTwo,
 #sectionThree,
 #sectionFour {
@@ -52,7 +52,7 @@ body {
   border: 1px solid  var(--color5);
   border-top: none;
 }
-#sectionDefault.show,
+#sectionOne.show,
 #sectionTwo.show,
 #sectionThree.show,
 #sectionFour.show {
