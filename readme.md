@@ -4,7 +4,7 @@
 
 - [Simple mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu/)
 - [Animated top-down mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu-anim/)
-- [Animated side slide-in mobile menu (accessible)](https://front-end-materials.github.io/menus/js-mobile-menu-anim-side/)
+- [Animated side slide-in mobile menu (accessible)](https://front-end-materials.github.io/menus/js-mobile-menu-anim-side/)—see [The trigram for heaven](https://www.htmhell.dev/11-the-trigram-for-heaven/) and [the Hamburger Menu](https://justmarkup.com/articles/2019-12-04-hamburger-menu/)
 - [responsive tabs](https://front-end-materials.github.io/menus/js-tabs/)
 
 ## Note:
