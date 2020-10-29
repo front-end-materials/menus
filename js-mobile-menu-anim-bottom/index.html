@@ -30,43 +30,40 @@ h1 { margin-top: .25em; }
 
 nav {
   position: absolute;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 100%;
+  bottom: 1.5em;
   background: rgba(85, 85, 85, .9);
   transition: all .25s;
-  /* LEAVE SPACE FOR THE HAMBURGER: */
-  height: calc(100vh - 2em);
-  bottom: 2em;
   /* MOVE THE MENU OFF-SCREEN: */
   transform: translateX(-100%);
+  height: 100vh;
 }
 nav a {
   padding: 1.25em 1.5em;
   color: #ccc;
   text-decoration: none;
-  border-bottom: var(--lightBorder);
-}
-nav a:first-child {
   border-top: var(--lightBorder);
 }
 
-/* HAMBURGER ICON CONTAINER */
+/* HAMBURGER ICON BUTTON */
 .menu {
   bottom: 0;
   position: fixed;
   width: 100%;
-  box-sizing: border-box;
   background: #555;
   text-align: center;
-  padding-left: 10px;
+  display: block;
   color: #fff;
   line-height: 2em;
+  border: none;
+  outline: none;
 }
 /* SLIDE-IN MOBILE MENU CONTAINER */
 .show-menu {
-  bottom: 2em;
   transform: translateX(0);
   transition: all .5s;
 }
@@ -102,8 +99,11 @@ nav a:first-child {
 </head>
 
 <body>
-
-  <div class="menu" id="menuToggle">☰</div>
+  <!-- accessible -->
+  <button class="menu" id="menuToggle" aria-expanded="false">
+    <span aria-hidden="true">☰</span> Menu
+  </button>
+  <!-- <div class="menu" id="menuToggle">☰</div> -->
   <nav id="menuNav">
     <a href="#">link 1</a>
     <a href="#">link 2</a>
@@ -117,11 +117,9 @@ nav a:first-child {
 
 <!-- JAVASCRIPT -->
 <script>
-
 const toggleMenu = () => {
   menuNav.classList.toggle("show-menu");
 }
-
 menuToggle.addEventListener("click", toggleMenu);
 
 </script>
