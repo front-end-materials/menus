@@ -11,6 +11,7 @@
 
 1. the CSS `display` property cannot be animated i.e. you can't animate a transition from `display: none;` to `display: flex;`.
 2. for smooth animations, the following properties in final "composite" browser rendering layer are best: `transform: translate…` or `scale…` or `rotate…`, as well as `opacity`.
+3. for side slide in from the right side you need to use `position: fixed` rather than `position: absolute` due to **overflow** issues.
 
 ## References
 
