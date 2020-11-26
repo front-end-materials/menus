@@ -1,22 +1,25 @@
 html {
-  --color1: teal;
-  --color2: #ccc;
-  --color3: #333;
-  --color4: #fff;
-  --color5: #000;
-  --color6: #aaa;
+  --light: #eee;
+  --pale: #ccc;
+  --dark: #333;
+  --darkest: #000;
 }
 
+/* mobile and general styles */
+
 body {
-  background: var(--color4);
+  background: var(--dark);
+  color: var(--pale);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; 
 }
 
 #tabButton {
   text-align: center;
   margin: 0;
   padding: .5em 0;
-  background:  var(--color3);
-  color: var(--color4);
+  background:  var(--dark);
+  color: var(--dark);
 }
 .tabs {
   display: flex;
@@ -26,13 +29,13 @@ body {
   padding: .5em 0;
   width: 100%;
   text-align: center;
-  color: var(--color5);
+  color: var(--darkest);
   text-decoration: none;
-  background: var(--color2);
-  border-bottom: 1px solid  var(--color5);  
+  background: var(--light);
+  /* border-bottom: 1px solid  var(--darkest);   */
 }
 .tabs .inactive {
-  background: var(--color6);
+  background: var(--pale);
 }
 
 .hide {
@@ -44,13 +47,13 @@ body {
 #sectionThree,
 #sectionFour {
   display: none;
-  background: var(--color2);
   flex-direction: column;
   align-items: center;
+  background: var(--light);
   padding-bottom: 1em;
-  color: white;
-  border: 1px solid  var(--color5);
-  border-top: none;
+  color: var(--darkest);
+  /* border: 1px solid  var(--darkest); */
+  /* border-top: none; */
 }
 #sectionOne.show,
 #sectionTwo.show,
@@ -59,8 +62,8 @@ body {
   display: flex;
 }
 
+/* larger screen styles */
 @media screen and (min-width: 500px) {
-
   #tabButton {
     display: none;
   }
@@ -68,13 +71,20 @@ body {
     flex-direction: row;
   }
   .tabs a {
-    border: 1px solid  var(--color5);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-bottom: none;
+    margin: 0 2px;
+    /* border: 1px solid  var(--darkest); */
+    /* border-bottom: none; */
+  }
+  .tabs a:first-child {
+    margin-left: 0;
+  }
+  .tabs a:last-child {
+    margin-right: 0;
   }
   .tabs.hide {
     display: flex;
   }
-
 }
+/* end larger screen styles */
