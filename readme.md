@@ -1,17 +1,17 @@
 # Examples of mobile menus
 
-## Menus
+Code above. Demos here:
 
-- [Simple mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu/)
-- [Animated top-down mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu-anim/)
-- [Animated side slide-in mobile menu (accessible)](https://front-end-materials.github.io/menus/js-mobile-menu-anim-side/)—see [The trigram for heaven](https://www.htmhell.dev/11-the-trigram-for-heaven/) and [the Hamburger Menu](https://justmarkup.com/articles/2019-12-04-hamburger-menu/)
-- [responsive tabs](https://front-end-materials.github.io/menus/js-tabs/)
+- [Simple top mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu/)
+- [Animated top slide-down mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu-anim/)
+- [Animated side slide-in mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu-anim-side)
+- [Animated bottom slide-up mobile menu (accessible)](https://front-end-materials.github.io/menus/js-mobile-menu-anim-bottom)
 
-## Note:
+## Notes:
 
-1. the CSS `display` property cannot be animated i.e. you can't animate a transition from `display: none;` to `display: flex;`.
+1. the CSS `display` property **cannot be animated** i.e. you can't animate a transition from `display: none;` to `display: flex;` or `display: block;`.
 2. for smooth animations, the following properties in final "composite" browser rendering layer are best: `transform: translate…` or `scale…` or `rotate…`, as well as `opacity`.
-3. for side slide in from the right side you need to use `position: fixed` rather than `position: absolute` due to **overflow** issues.
+3. for side slide in from the right side you *may* need to use `position: fixed` instead of `position: absolute` due to possible **overflow** issues (where an unwanted scrollbar appears).
 
 ## References
 
