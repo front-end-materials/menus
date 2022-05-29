@@ -15,7 +15,8 @@ body { margin: 0; font-family: sans-serif; }
   height: 8em;
 }
 .menu {
-  margin-top: 4em;
+  position: fixed;
+  top: 4em;
   display: flex;
   flex-direction: row;
   width: 10em;
