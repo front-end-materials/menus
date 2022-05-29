@@ -2,6 +2,7 @@
 
 Code above. Demos here:
 
+- [CSS Compact Slideout Menu](https://front-end-materials.github.io/menus/compact-slideout-menu/)
 - [Simple top mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu/)
 - [Animated top slide-down mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu-anim/)
 - [Animated side slide-in mobile menu](https://front-end-materials.github.io/menus/js-mobile-menu-anim-side)
