@@ -1,5 +1,5 @@
-body {margin: 0; font-family: sans-serif;}
-.sections {
+body { margin: 0; font-family: sans-serif; }
+.menutab {
   writing-mode: vertical-lr;
   margin: 0;
   padding: 1em 0;
@@ -27,6 +27,8 @@ body {margin: 0; font-family: sans-serif;}
 .menushow {
   transform: translateX(0);
 }
+
+/* styles for the actual menu items */
 nav {
   display: flex;
   flex-direction: column;
