@@ -14,12 +14,15 @@ header h1 {
 nav.hamburger_menu {
   background: beige;
   display: flex;
+  position: absolute;
+  right: 0;
   flex-direction: column;
   transition: all .25s;
   transform: translateY(-5.5em);
 }
 nav.hamburger_menu a {
   color: #333;
+  width: 12em;
   text-transform: uppercase;
   padding: .25em .5em;
   font-size: 1em;
