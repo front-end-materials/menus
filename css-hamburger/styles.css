@@ -44,6 +44,7 @@ label[for="hamburger"] {
   position: absolute;
   right: .25em;
   top: 2px;
+  z-index: 100;
 }
 #hamburger {
   display: none;
