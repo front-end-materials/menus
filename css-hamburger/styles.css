@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 header {
   background: silver;
@@ -18,15 +19,16 @@ nav.hamburger_menu {
   right: 0;
   flex-direction: column;
   transition: all .25s;
-  transform: translateY(-5.5em);
+  transform: translateY(-6.75em);
 }
 nav.hamburger_menu a {
   color: #333;
   width: 12em;
-  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
   padding: .25em .5em;
-  font-size: 1em;
-  text-decoration: 0;
+  font-size: 1.25em;
+  text-decoration: none;
   border-bottom: 2px solid #ccc;
 }
 nav.hamburger_menu a:hover {
@@ -51,5 +53,5 @@ label[for="hamburger"] {
   color: #666;
 }
 #hamburger:checked ~ .hamburger_menu {
-  transform: translateY(3em);
+  transform: translateY(3.25em);
 }
